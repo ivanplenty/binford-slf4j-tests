@@ -1,0 +1,33 @@
+{
+  "name": "binford-slf4j-tests",
+  "version": "0.0.1",
+  "author": "Ivan Plenty <ivanplenty@gmail.com>",
+  "description": "Test cases for Binford slf4j",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivanplenty/binford-slf4j-tests.git"
+  },
+  "keywords": [
+    "binford"
+  ],
+  "dependencies" : {
+    "binford-slf4j" : "git+ssh://git@github.com:ivanplenty/binford-slf4j.git",
+    "binford-slf4j-adapter" : "git+ssh://git@github.com:ivanplenty/binford-slf4j-adapter.git",
+    "log4js" : "0.6.x",
+    "winston" : "0.7.x"
+  },
+  "devDependencies": {
+    "mocha"    :  "1.15.x",
+    "should" : "2.1.1",
+    "blanket" : "1.1.x"
+  },
+  "scripts": {
+      "blanket": {
+        "pattern": "binford-slf4j-tests/lib",
+        "pattern": "binford-slf4j-adapter/lib",
+        "pattern": "binford-slf4j/lib"
+      }
+    },
+  "license": "MIT"
+}
